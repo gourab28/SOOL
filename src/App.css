@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+@import url(https://fonts.googleapis.com/css?family=Bangers);
+
+body{
+  background:#fff;
+  font-family: 'Bangers', cursive;
+  font-size: 25px;
+}
+.box{
+  margin:25px;
+  width:250px;
+  height:250px;
+  background:#fff;
+  border: solid black;
+  border-color: black;
+  float:left; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box1{
+  border-width: 3px 4px 3px 5px;
+  border-radius:95% 4% 92% 5%/4% 95% 6% 95%;
+  transform: rotate(2deg);
+}
+.box2{
+  width:350px;
+  border-width: 3px 3px 5px 5px;
+  border-radius:4% 95% 6% 95%/95% 4% 92% 5%;
+  transform: rotate(-2deg);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.box3{
+  border-width: 5px 3px 3px 5px;
+  border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+  transform: rotate(2deg);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.oddboxinner{
+  margin:15px;
+  transform: rotate(-2deg);
 }
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.evenboxinner{
+  transform: rotate(2deg);
+  margin:15px;
+  padding:0 5px;
+  float:right;
+  background:#ddd;
+  border:1px solid #222;
+  box-shadow:3px 3px 0 #222;
 }
