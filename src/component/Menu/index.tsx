@@ -5,6 +5,10 @@ export default function Menu() {
     <Fragment>
      <nav id="topnav">
         <div className="inner">
+        <input type="checkbox" id="check" />
+      <label htmlFor="check" className="checkbtn">
+        <i className="fas fa-bars checkbtn"></i>
+      </label>
           <a className="left logo"><img src={Logo} alt="Logo" /></a>
           <div className="left nav">
             <ul>

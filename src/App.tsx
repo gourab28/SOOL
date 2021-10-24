@@ -12,15 +12,14 @@ function App() {
 
   return (
     <div>
-     {matches ? (<Fragment><Mobile /></Fragment>) : (<Fragment>
+     <Fragment>
       <div className="whole-container">
       <Menu />
       <Home />     
       <Footer />
     </div>
-     </Fragment>)}
+     </Fragment>
       </div>
   );
 }
-
 export default App;
