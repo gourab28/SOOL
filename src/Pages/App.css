@@ -116,6 +116,15 @@ START // Top Nav Bar
   width: 100%;
   height: 75px;
   padding: 0 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #topnav .logo {
@@ -1177,7 +1186,7 @@ END // Footer
   background-position: top right;
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 930px) {
   .inner {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1190,18 +1199,21 @@ END // Footer
   }
   #topnav .logo > img {
     width: 7em;
-    margin-top: -1em;
   }
   h1.big {
-    font-size: 87px;
+    font-size: 80px;
     margin-bottom: -60px;
   }
-  p.big {
+  h5.big {
     font-size: 26px;
+  }
+  p.big {
+    font-size: 22px;
     margin-top: -0.15em;
   }
   .comic-pane {
-    width: 19em !important;
+    width: 17em !important;
+    margin-left: -21% !important;
   }
   #check:checked ~ ul {
     left: 10%;
@@ -1262,9 +1274,28 @@ nav ul li a {
   }
 }
 
-@media (max-width: 858px) {
+@media (min-width: 540px) {
+  .comic .inner {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 930px) {
   .checkbtn {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 7px;
+    line-height: 2;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
   }
   ul {
     position: fixed;
