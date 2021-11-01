@@ -3,6 +3,7 @@ import "./App.scss";
 import Welcome from "../component/Welcome";
 import Quotes from "../component/Quotes";
 import Info from "../component/Info";
+import Rarity from "../component/Rarity";
 export default function Home() {
   return (
     <Fragment>
@@ -10,6 +11,7 @@ export default function Home() {
        <Welcome />
        <Info />
        <Quotes />
+       <Rarity />
       </div>
     </Fragment>
   );
